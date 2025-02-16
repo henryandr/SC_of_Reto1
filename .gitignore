@@ -1,0 +1,35 @@
+# === ARCHIVOS DEL SISTEMA ===
+.DS_Store            # MacOS metadata
+Thumbs.db           # Cache de miniaturas en Windows
+desktop.ini         # Configuración de carpetas en Windows
+
+# === CONFIGURACIÓN DE GIT ===
+.gitattributes      # Configuración de atributos opcionales
+
+# === ARCHIVOS COMPILADOS Y EJECUTABLES ===
+bin/                # Carpeta de binarios
+obj/                # Carpeta de archivos temporales y compilados
+
+# === CONFIGURACIÓN DE IDES Y PROYECTOS ===
+.vs/                # Carpeta de Visual Studio
+*.vcxproj.user      # Configuración de usuario en Visual Studio
+*.suo               # Archivo de configuración temporal de Visual Studio
+*.sln               # Soluciones de Visual Studio (si deseas ignorarlas)
+*.xcworkspace/      # Espacio de trabajo de Xcode
+*.xcodeproj/        # Proyecto de Xcode
+*.xcuserdatad/      # Datos de usuario de Xcode
+
+# === CONFIGURACIÓN Y ARCHIVOS TEMPORALES ===
+Makefile            # Archivo de Make (si es generado)
+config.make         # Configuración específica del proyecto
+openFrameworks-Info.plist  # Información del proyecto (evitar cambios accidentales)
+
+# === CACHÉS Y LOGS ===
+*.log               # Archivos de log
+*.tmp               # Archivos temporales
+*.bak               # Archivos de respaldo
+
+# === LIBRERÍAS Y DEPENDENCIAS ===
+addons/*/libs/      # Librerías dentro de addons
+addons/*/bin/       # Binarios de los addons
+addons.make         # Lista de addons utilizados (opcional)
