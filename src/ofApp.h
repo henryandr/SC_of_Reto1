@@ -22,18 +22,28 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h) override;
 		void dragEvent(ofDragInfo dragInfo) override;
 		void gotMessage(ofMessage msg) override;
+
+		void convertMouseToRay(int mouseX, int mouseY, glm::vec3& rayStart, glm::vec3& rayEnd);
+		bool rayIntersectsSphere(const glm::vec3& rayStart, const glm::vec3& rayDir, const glm::vec3& sphereCenter, float sphereRadius, glm::vec3& intersectionPoint);
+
+
     void generateSpheres();
     float xStep, yStep, distDiv, amplitud;
     //vector<ofSpherePrimitive> spheres;
     ofEasyCam myCam;
     vector<ofColor> spheresColor;
+	ofColor selectedSphereColor; // Color de la esfera seleccionada
+	int selectedSphereIndex; // Índice de la esfera seleccionada
+
     ofLight light;
     bool flagAmp;
+	bool sphereSelected;
     // Malla de una sola esfera para instancing
     ofVboMesh sphereMesh;
 
     // Vectores para posiciones y colores de las esferas
     vector<glm::vec3> spherePositions;
+	glm::vec3 selectedSpherePosition;
 
     
 		
