@@ -1,5 +1,3 @@
-Aquí tienes el contenido para el archivo `README.md` de tu repositorio:
-
 # **Proyecto de Selección de Esferas en 3D con openFrameworks**
 
 ## **Descripción General**
